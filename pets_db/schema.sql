@@ -1,0 +1,14 @@
+DROP DATABASE IF EXISTS pets_db;
+
+CREATE DATABASE pets_db;
+
+USE pets_db;
+
+CREATE TABLE pets(
+    id INT NOT NULL AUTO_INCREMENT,
+    nam VARCHAR(255) NOT NULL,
+    typ VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    seen_vet BOOLEAN NOT NULL,
+    PRIMARY KEY (id)
+);
